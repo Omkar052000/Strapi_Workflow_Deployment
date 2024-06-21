@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Strapi_Instance_sg" {
-  name = "Strapi_Securit_Group"
+  name = "Strapi_Security_Group"
   description = "Allow HTTP, HTTPS, and Strapi ports"
 
   ingress {
