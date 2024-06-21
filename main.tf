@@ -50,7 +50,7 @@ resource "aws_security_group" "Strapi_Instance_sg" {
 
 resource "aws_instance" "Strapi_Instance" {
   ami = "ami-04b70fa74e45c3917"
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
   tags = {
     Name = "Strapi_Instance_Task-3"
   }
