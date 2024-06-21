@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Strapi_Instance_sg" {
-  name = "Strapi_sg12"
+  name = "Strapi_Securit_Group"
   description = "Allow HTTP, HTTPS, and Strapi ports"
 
   ingress {
@@ -49,7 +49,7 @@ resource "aws_security_group" "Strapi_Instance_sg" {
 }
 
 resource "aws_instance" "Strapi_Instance" {
-  ami = "ami-04b70fa74e45c3917"
+  ami = "ami-0f58b397bc5c1f2e8"
   instance_type = "t2.medium"
   tags = {
     Name = "Strapi_Instance_Task-3"
