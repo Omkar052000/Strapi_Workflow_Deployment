@@ -1,5 +1,5 @@
 name: Code Deployment
-# this is a comment
+
 on:
   push:
     branches:
@@ -24,3 +24,4 @@ jobs:
           git pull origin main
           npm install
           pm2 restart strapi
+        port: 22
