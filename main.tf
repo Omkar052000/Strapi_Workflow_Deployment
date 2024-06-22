@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-2"
 }
 
 resource "aws_security_group" "Strapi_Instance_sg" {
@@ -49,14 +49,14 @@ resource "aws_security_group" "Strapi_Instance_sg" {
 }
 
 resource "aws_instance" "Strapi_Instance" {
-  ami = "ami-0f58b397bc5c1f2e8"
+  ami = "ami-09040d770ffe2224f"
   instance_type = "t2.medium"
   tags = {
     Name = "Strapi_Instance_Task-3"
   }
 
 
-key_name = "my_strapi_task-2_key"
+key_name = "my_strapi_task-3_key"
 
 user_data = <<-EOF
                 !/bin/bash
